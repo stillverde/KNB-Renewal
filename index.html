@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서브타이트 | 웹사이트 타이틀</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.png" />
+    <!-- reset.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- google font -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- my -->
+    <link rel="stylesheet" href="./assets/css/comm.css" />
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- my -->
+    <script defer src="./assets/js/comm.js"></script>
+    <!-- defer: body를 다 읽은 후에 script를 읽도록 하는 명령어 -->
+  </head>
+  <body>
+    <!-- reset.scss의 u-skip 구조 참고해서 마크업해줌 -->
+    <div id="u-skip">
+      <a href="#gnb">주메뉴 바로가기</a>
+      <!-- #gnb: #gnb에게 연결되도록 함 -->
+      <a href="#main">본문 바로가기</a>
+    </div>
+    <div class="wrap">
+      <header id="header" class="logo">
+        <!-- width:100% -->
+        <div class="inner">
+          <!-- max-width:1280px; margin:0 auto; -->
+          <!-- inner나 container로 씀 -->
+          <h1 id="logo">
+            <a href="#">logo</a>
+          </h1>
+          <div class="col-right">
+            <div class="gnb-wrap">
+              <input
+                checked
+                type="checkbox"
+                name="gnbNav"
+                id="gnbNav"
+                class="inp-burger"
+              />
+              <!-- script 표기법인 카멜표기로 사용 >> 동적처리가 가능해야 하기 때문-->
+              <!-- css 표기법과 구분해서 사용해주는 것이 좋음! -->
+              <label for="gnbNav" class="label-burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <div class="blind">전체 메뉴 보기</div>
+              </label>
+              <nav id="gnb">전체 메뉴</nav>
+            </div>
+            <div class="util">
+              <ul>
+                <li>
+                  <a href="#" class="link-g link-lang"
+                    ><span class="blind">language</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-g link-search">
+                    <span class="blind">search</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="link-g link-mypage">
+                    <span class="blind">mypage</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <!-- slide-swiper -->
+        <div class="inner">
+          <swiper-container
+            class="slide-intro"
+            pagination="true"
+            pagination-clickable="true"
+            navigation="true"
+            space-between="30"
+            loop="true"
+          >
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide>
+            <swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide>
+            <swiper-slide>Slide 9</swiper-slide>
+          </swiper-container>
+
+          <section class="seg-g sec-best">
+            <div class="inner">
+              <h2 class="sec-tit">Best Items</h2>
+              <div class="sec-cont">
+                <swiper-container
+                  class="slide-best"
+                  pagination="true"
+                  pagination-clickable="true"
+                  navigation="true"
+                  space-between="30"
+                  loop="true"
+                >
+                  <swiper-slide>Slide 1</swiper-slide>
+                  <swiper-slide>Slide 2</swiper-slide>
+                  <swiper-slide>Slide 3</swiper-slide>
+                  <swiper-slide>Slide 4</swiper-slide>
+                  <swiper-slide>Slide 5</swiper-slide>
+                  <swiper-slide>Slide 6</swiper-slide>
+                  <swiper-slide>Slide 7</swiper-slide>
+                  <swiper-slide>Slide 8</swiper-slide>
+                  <swiper-slide>Slide 9</swiper-slide>
+                </swiper-container>
+              </div>
+            </div>
+          </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      </main>
+      <footer id="footer">
+        <h1 class="logo">
+          <a href="#">logo</a>
+        </h1>
+        <div class="sns">
+          <a href="#">instagram</a>
+          <a href="#">youtube</a>
+          <a href="#">blog</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
