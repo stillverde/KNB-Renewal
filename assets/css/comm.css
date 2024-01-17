@@ -126,7 +126,7 @@ body {
 }
 /* color값은 디자인가이드에 맞게사용 */
 a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 a:active, a:hover {
@@ -300,7 +300,8 @@ legend {
   line-height: normal;
   color: #fff;
 }
-#main .content {
+#main .content,
+#main .side-bar-li {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: normal;
@@ -311,6 +312,8 @@ legend {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: calc(100% - 70px);
+  padding: 0;
 }
 #main .main-visual .inner .txt-wrap {
   display: flex;
@@ -325,6 +328,26 @@ legend {
   letter-spacing: normal;
   line-height: normal;
   color: #fff;
+}
+#main .main-visual .side-bar-wrap {
+  height: 70px;
+  padding-left: 80px;
+}
+#main .main-visual .side-bar-wrap .side-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#main .main-visual .side-bar-wrap .side-bar-li {
+  display: block;
+  width: 124px;
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+}
+#main .main-visual .side-bar-wrap .side-bar-li.active {
+  background: #d92b2b;
+  border-radius: 43px;
 }
 
 #footer {
