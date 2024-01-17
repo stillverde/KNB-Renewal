@@ -312,14 +312,14 @@ legend {
   justify-content: center;
   align-items: center;
 }
-#main .mv-txt-wrap {
+#main .main-visual .inner .txt-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 12px;
 }
-#main .mv-txt-wrap .sub-tit {
+#main .main-visual .inner .txt-wrap .sub-tit {
   font-weight: 400;
   font-size: 20px;
   letter-spacing: normal;
@@ -439,4 +439,8 @@ legend {
 .slide-best swiper-slide {
   height: 300px;
   background: #e0e0e0;
+}
+
+.main-visual {
+  background: linear-gradient(0deg, #000 0.1%, rgba(0, 0, 0, 0) 78.23%), url(../../images/sub2/main-visual/main-visual-sub2.jpg) no-repeat 50% 50%/cover;
 }/*# sourceMappingURL=comm.css.map */

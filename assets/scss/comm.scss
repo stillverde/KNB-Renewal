@@ -53,14 +53,14 @@
   .main-visual {
     .inner {
       @include flexCenter;
-    }
-  }
-  .mv-txt-wrap {
-    @include flexCenter;
-    flex-direction: column;
-    gap: 12px;
-    .sub-tit {
-      @include web-bd(20px);
+      .txt-wrap {
+        @include flexCenter;
+        flex-direction: column;
+        gap: 12px;
+        .sub-tit {
+          @include web-bd(20px);
+        }
+      }
     }
   }
 }
